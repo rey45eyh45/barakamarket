@@ -4,7 +4,7 @@ import { ArrowLeft, CheckCircle2, MapPin, Phone, User, Navigation, CreditCard, W
 import { motion, AnimatePresence } from 'motion/react';
 import { useTelegram } from '../contexts/TelegramContext';
 import { Button, IconButton } from './ui/button';
-import { Input } from './ui/Input';
+import { Input } from './ui/input';
 import { Card } from './ui/card';
 import { getPromoCodes, getPromoCodeUsage, savePromoCodeUsage, savePromoCodes, getShippingZones, getShippingMethods } from '../utils/storage';
 import { toast } from 'sonner@2.0.3';
