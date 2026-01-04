@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useState, useEffect } from 'react';
 import { ProductGridSkeleton } from './ui/skeleton-loaders';
 import { ProductCardImage } from './ui/ProductImage';
-import { Button, IconButton } from './ui/Button';
-import { Card } from './ui/Card';
-import { EmptyState } from './ui/EmptyState';
+import { Button, IconButton } from './ui/button';
+import { Card } from './ui/card';
+import { EmptyState } from './ui/emptystate';
 
 interface FavoritesPageProps {
   products: Product[];

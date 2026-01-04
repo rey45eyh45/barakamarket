@@ -1,5 +1,5 @@
-import { Button, IconButton } from './ui/Button';
-import { Card } from './ui/Card';
+import { Button, IconButton } from './ui/button';
+import { Card } from './ui/card';
 import { VariantSelector } from './VariantSelector';
 import { toast } from 'sonner@2.0.3';
 import { Product } from '../types';

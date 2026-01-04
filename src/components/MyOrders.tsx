@@ -5,11 +5,11 @@ import { OrderTracking } from './OrderTracking';
 import { OrderCancellationModal } from './OrderCancellationModal';
 import { OrderListSkeleton } from './ui/skeleton-loaders';
 import { StatusBadge } from './ui/Badge';
-import { Button, IconButton } from './ui/Button';
-import { Card, CardHeader, CardContent } from './ui/Card';
+import { Button, IconButton } from './ui/button';
+import { Card, CardHeader, CardContent } from './ui/card';
 import { useAuth } from '../contexts/AuthContext';
 import { canCancelOrder } from '../types/cancellation';
-import { EmptyState } from './ui/EmptyState';
+import { EmptyState } from './ui/emptystate';
 
 interface OrderItem {
   product: {

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { toast } from 'sonner@2.0.3';
 import { useLanguage } from '../contexts/LanguageContext';
 import { CancellationReason, CancellationRequest, CANCELLATION_REASON_LABELS } from '../types/cancellation';
-import { Button } from './ui/Button';
+import { Button } from './ui/button';
 
 interface OrderCancellationModalProps {
   isOpen: boolean;

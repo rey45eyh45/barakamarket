@@ -8,10 +8,10 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ProductGridSkeleton } from './ui/skeleton-loaders';
 import { ProductCardImage } from './ui/ProductImage';
-import { Button, IconButton } from './ui/Button';
-import { Card } from './ui/Card';
-import { Chip } from './ui/Chip';
-import { EmptyState } from './ui/EmptyState';
+import { Button, IconButton } from './ui/button';
+import { Card } from './ui/card';
+import { Chip } from './ui/chip';
+import { EmptyState } from './ui/emptystate';
 
 interface CatalogPageProps {
   products: Product[];

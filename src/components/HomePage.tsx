@@ -7,8 +7,8 @@ import { useAuth } from '../contexts/AuthContext';
 import { Logo } from './Logo';
 import { BannerSkeleton, ProductCardSkeleton } from './ui/skeleton-loaders';
 import { ProductCardImage } from './ui/ProductImage';
-import { Button, IconButton } from './ui/Button';
-import { Card } from './ui/Card';
+import { Button, IconButton } from './ui/button';
+import { Card } from './ui/card';
 import { SpinWheel } from './SpinWheel';
 import { getSpinWheelConfig } from '../utils/spinWheelUtils';
 

@@ -7,8 +7,8 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ProductGridSkeleton } from './ui/skeleton-loaders';
 import { ProductCardImage } from './ui/ProductImage';
-import { Button, IconButton } from './ui/Button';
-import { Card } from './ui/Card';
+import { Button, IconButton } from './ui/button';
+import { Card } from './ui/card';
 
 interface CatalogPageAdvancedProps {
   products: Product[];

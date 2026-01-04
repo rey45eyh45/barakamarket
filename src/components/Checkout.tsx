@@ -3,9 +3,9 @@ import { CartItem, PromoCode, ShippingZone, ShippingMethod } from '../types';
 import { ArrowLeft, CheckCircle2, MapPin, Phone, User, Navigation, CreditCard, Wallet, Banknote, Loader2, ShoppingCart, Tag, X, Truck } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useTelegram } from '../contexts/TelegramContext';
-import { Button, IconButton } from './ui/Button';
+import { Button, IconButton } from './ui/button';
 import { Input } from './ui/Input';
-import { Card } from './ui/Card';
+import { Card } from './ui/card';
 import { getPromoCodes, getPromoCodeUsage, savePromoCodeUsage, savePromoCodes, getShippingZones, getShippingMethods } from '../utils/storage';
 import { toast } from 'sonner@2.0.3';
 

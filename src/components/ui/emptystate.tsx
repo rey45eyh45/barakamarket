@@ -1,7 +1,7 @@
 import React from 'react';
 import { LucideIcon } from 'lucide-react';
 import { motion } from 'motion/react';
-import { Button } from './Button';
+import { Button } from './button';
 
 interface EmptyStateProps {
   icon: LucideIcon;

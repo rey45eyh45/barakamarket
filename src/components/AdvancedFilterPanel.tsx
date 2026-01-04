@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { X, SlidersHorizontal, Star, DollarSign, Package, TrendingUp, Check } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Button } from './ui/Button';
+import { Button } from './ui/button';
 
 export interface FilterOptions {
   // Price Range
