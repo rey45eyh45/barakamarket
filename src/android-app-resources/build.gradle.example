@@ -1,0 +1,57 @@
+// build.gradle (android/app/)
+// Bu faylni Android Studio ochganingizda ko'rasiz
+
+android {
+    namespace "com.barakamarket.app"
+    compileSdkVersion 34
+    
+    defaultConfig {
+        applicationId "com.barakamarket.app"
+        minSdkVersion 22
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    
+    // Keystore sozlamalari (Release build uchun)
+    signingConfigs {
+        release {
+            // Keystore yaratganingizdan keyin bu qatorlarni uncomment qiling:
+            // storeFile file('baraka-market.keystore')
+            // storePassword 'SIZNING_PAROLINGIZ'
+            // keyAlias 'baraka-market'
+            // keyPassword 'SIZNING_PAROLINGIZ'
+        }
+    }
+    
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // signingConfig signingConfigs.release // Keystore tayyor bo'lganda uncomment qiling
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.activity:activity:1.8.2'
+    
+    // Capacitor dependencies (avtomatik qo'shiladi)
+    implementation project(':capacitor-android')
+    implementation project(':capacitor-app')
+    implementation project(':capacitor-keyboard')
+    implementation project(':capacitor-splash-screen')
+    implementation project(':capacitor-status-bar')
+}
