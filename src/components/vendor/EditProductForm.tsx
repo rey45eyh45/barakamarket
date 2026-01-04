@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { X, Upload, Plus, Minus, Package, DollarSign, Tag, Calendar, Shield, RotateCcw, Info, Star, Save } from 'lucide-react';
 import { Product } from '../../types';
-import { Button, IconButton } from '../ui/Button';
-import { Input } from '../ui/Input';
-import { Card } from '../ui/Card';
+import { Button, IconButton } from '../ui/button';
+import { Input } from '../ui/input';
+import { Card } from '../ui/card';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface EditProductFormProps {
