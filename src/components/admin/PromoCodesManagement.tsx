@@ -19,9 +19,9 @@ import {
   CheckCheck
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Button, IconButton } from '../ui/Button';
-import { Input } from '../ui/Input';
-import { Card } from '../ui/Card';
+import { Button, IconButton } from '../ui/button';
+import { Input } from '../ui/input';
+import { Card } from '../ui/card';
 import { getPromoCodes, savePromoCodes } from '../../utils/storage';
 import { toast } from 'sonner@2.0.3';
 

@@ -11,7 +11,7 @@ import {
   TrendingProduct,
   AnalyticsSummary
 } from '../../types/analytics';
-import { Card, CardHeader, CardContent } from '../ui/Card';
+import { Card, CardHeader, CardContent } from '../ui/card';
 
 export function AnalyticsDashboard() {
   const { language } = useLanguage();
