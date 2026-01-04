@@ -174,9 +174,36 @@ export function OTPModal({
           {/* Content */}
           <div className="p-6">
             {/* Instructions */}
-            <p className="text-gray-600 dark:text-gray-400 text-sm text-center mb-6">
+            <p className="text-gray-600 dark:text-gray-400 text-sm text-center mb-4">
               6 raqamli kodni kiriting
             </p>
+
+            {/* Demo mode - show test code */}
+            {testCode && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mb-4 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 border border-green-200 dark:border-green-700 rounded-xl p-4"
+              >
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <Info className="w-4 h-4 text-green-600" />
+                  <span className="text-green-700 dark:text-green-300 text-sm font-medium">Demo rejim - Tasdiqlash kodi:</span>
+                </div>
+                <div className="flex justify-center gap-2">
+                  {testCode.split('').map((digit, i) => (
+                    <span 
+                      key={i}
+                      className="w-10 h-12 flex items-center justify-center bg-white dark:bg-gray-800 border-2 border-green-400 rounded-lg text-xl font-bold text-green-600"
+                    >
+                      {digit}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-green-600 dark:text-green-400 text-xs text-center mt-2">
+                  Yuqoridagi kodni quyiga kiriting
+                </p>
+              </motion.div>
+            )}
 
             {/* OTP Input */}
             <div className="flex gap-2 justify-center mb-4" onPaste={handlePaste}>

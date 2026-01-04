@@ -538,22 +538,26 @@ export function AuthPage({ onLogin }: AuthPageProps) {
             </motion.button>
           </form>
 
-          {/* Divider */}
-          <div className="flex items-center gap-4 my-6">
-            <div className="flex-1 h-px bg-gray-200"></div>
-            <span className="text-gray-400 text-sm">yoki</span>
-            <div className="flex-1 h-px bg-gray-200"></div>
-          </div>
-
-          {/* Telegram Login Button */}
-          <CustomTelegramLoginButton 
-            botName="Baraka_market_aibot"
-            authParam="login"
-          />
+          {/* Info about demo mode */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="mt-6 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-4"
+          >
+            <div className="flex items-start gap-3">
+              <div className="p-2 bg-blue-100 dark:bg-blue-800 rounded-lg">
+                <Info className="w-5 h-5 text-blue-600 dark:text-blue-300" />
+              </div>
+              <div>
+                <h4 className="text-blue-800 dark:text-blue-200 font-medium text-sm mb-1">Demo rejim</h4>
+                <p className="text-blue-600 dark:text-blue-400 text-xs">
+                  Telefon raqamingizni kiriting va "Kirish" tugmasini bosing. OTP kod ekranda ko'rsatiladi.
+                </p>
+              </div>
+            </div>
+          </motion.div>
           
-          <p className="text-gray-400 text-xs text-center mt-3">
-            Telegram orqali tez va xavfsiz kirish
-          </p>
           <motion.div
             className="text-center mt-6"
             initial={{ opacity: 0 }}
