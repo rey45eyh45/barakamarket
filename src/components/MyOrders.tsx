@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { OrderTracking } from './OrderTracking';
 import { OrderCancellationModal } from './OrderCancellationModal';
 import { OrderListSkeleton } from './ui/skeleton-loaders';
-import { StatusBadge } from './ui/Badge';
+import { StatusBadge } from './ui/badge';
 import { Button, IconButton } from './ui/button';
 import { Card, CardHeader, CardContent } from './ui/card';
 import { useAuth } from '../contexts/AuthContext';

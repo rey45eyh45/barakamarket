@@ -2,7 +2,7 @@ import { CartItem } from '../types';
 import { X, Plus, Minus, Trash2, ShoppingBag } from 'lucide-react';
 import { Button, IconButton } from './ui/button';
 import { Card } from './ui/card';
-import { NumberBadge } from './ui/Badge';
+import { NumberBadge } from './ui/badge';
 
 interface CartProps {
   cartItems: CartItem[];
